@@ -1,0 +1,32 @@
+.more-state{
+    display: none;
+}
+.more-target{
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+}
+.more-state:checked ~ .more-wrap .more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+}
+.more-state ~ .more-trigger:before {
+    content: 'Show more';
+}
+
+.more-state:checked ~ .more-trigger:before {
+    content: 'Show less';
+}
+
+.more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 .5em;
+    color: #666;
+    font-size: .9em;
+    line-height: 2;
+    border: 1px solid #ddd;
+    border-radius: .25em;
+}
