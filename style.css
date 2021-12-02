@@ -1,32 +1,37 @@
-.more-state{
-    display: none;
+body {
+    margin: 0;
+    padding: 0;
 }
-.more-target{
-    opacity: 0;
-    max-height: 0;
-    font-size: 0;
-    transition: .25s ease;
+/** menu */
+nav {
+    background: #222;
+    padding: 5px 20px;
 }
-.more-state:checked ~ .more-wrap .more-target {
-    opacity: 1;
-    font-size: inherit;
-    max-height: 999em;
+nav ul {
+    padding: 0;
+    margin: 0;
 }
-.more-state ~ .more-trigger:before {
-    content: 'Show more';
-}
+.menu-container {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
 
-.more-state:checked ~ .more-trigger:before {
-    content: 'Show less';
 }
+.menu-container a {
+    text-decoration: none;
+    color: white;
+}
+.menu-container a:Hover {
+    color: yellow;
+}
+.menu-container .project-name {
+    color: red;
+}
+@media only screen and (max-width: 900px) {
+    .menu-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/** main body */
 
-.more-trigger {
-    cursor: pointer;
-    display: inline-block;
-    padding: 0 .5em;
-    color: #666;
-    font-size: .9em;
-    line-height: 2;
-    border: 1px solid #ddd;
-    border-radius: .25em;
-}
