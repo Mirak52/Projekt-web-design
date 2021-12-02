@@ -1,22 +1,26 @@
 body {
     margin: 0;
     padding: 0;
+    background: #b00b69;
 }
 /** menu */
 nav {
-    background: #222;
-    padding: 5px 20px;
+    background: #7b003e;
+    width: 100%;
 }
 nav ul {
-    padding: 0;
+    padding: 1em;
     margin: 0;
     list-style: none;
 }
 .menu-container {
     display: flex;
-    /*list-style: none;*/
-    justify-content: space-between;
+    list-style: none;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
 }
+
 .menu-container a {
     text-decoration: none;
     color: white;
@@ -25,19 +29,79 @@ nav ul {
     color: yellow;
 }
 .menu-container .project-name {
-    color: red;
+    font-weight: bold;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 900px) {
     .menu-container {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
+    }
+}
+/*body*/
+main {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.box-menu {
+    width: 100%;
+    float: left;
+}
+.content {
+    width: 100%;
+    float: left;
+}
+.flex-articles {
+    display: flex;
+    flex-direction: column;
+}
+.flex-articles > article {
+    background-color: #f1f1f1;
+    width: 100%;
+    justify-content: center;
+}
+
+.flex-articles article p {
+    margin: 1em;
+}
+.flex-articles article a {
+    text-decoration: none;
+}
+.flex-articles article h2,h3 {
+    background: #222222;
+    padding: 1em;
+    margin-top: 0;
+}
+.flex-articles article a {
+    color: white;
+}
+.flex-articles article h2,h3 a:Hover {
+    color: #b00b69;
+}
+.flex-articles > article:not(:first-child) {
+    margin-top: 1em;
+}
+article img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+@media only screen and (min-width: 900px) {
+    main {
+        width: 75%;
+        height: 100%;
+    }
+    .box-menu {
+        width: 25%;
+        float: right;
+        background: white;
+    }
+    .content {
+        width: 75%;
+        float: left;
     }
 }
 
-    /*kategorie*/
+
+/*kategorie*/
 @media only screen and (max-width: 600px) {
-
-
     .grid-kategorie{
         display: grid;
         grid-template-columns: repeat(3,1fr);
@@ -46,7 +110,6 @@ nav ul {
 
     }
     .grid-kategorie > div{
-
         background-color: aqua;
     }
     .grid-item2{
@@ -85,7 +148,7 @@ nav ul {
 .footer
 {
     display: inline-grid;
-    position: absolute;
+    position: static;
     width: 100%;
     text-align: center;
 }
