@@ -84,8 +84,14 @@ nav ul {
 }
 .footer
 {
+    display: inline-grid;
     position: absolute;
     width: 100%;
+    text-align: center;
+}
+.footer a{
+    color: white;
+
 }
 /*.grid-container{
     display: grid;
