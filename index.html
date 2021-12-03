@@ -3,98 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="zpravodaj">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <META name="keywords" content="Škola, projekt, zápočet">
     <link rel="stylesheet" href="style.css">
+
     <title>WebDesignProject</title>
 </head>
 
 <body>
-<main>
-    <header>
-        <div class="navbar">
-            <nav>
-                <h1 class="nadpis">HomePage</h1>
-                <ul>
-                    <Li><a class="button" href="index.html" >Home</a></Li>
-                    <Li><a class="button" href="article.html">Článek1</a></Li>
-                    <Li><a class="button" href="article.html">Článek2</a></Li>
-                    <Li><a class="button" href="kontakty.html">Kontakty</a></Li>
-                    <Li><a class="button" href="kategorie.html">Kategorie</a></Li>
-                </ul>
-            </nav>
-            <div class="searchbar">
-            <input type="text" placeholder="search">
-                <button type="submit">hledat</button>
-            </div>
-        </div>
-    </header>
-    <div class="articles">
+<header>
+    <nav>
+        <ul class="menu-container">
+            <li class="project-name"><a class="item" href="index.html">Vítejte v našem školním projektu P.M.V</a></li>
+            <Li><a class="item" href="kontakty.html">Kontakty</a></Li>
+            <Li><a class="item" href="kategorie.html">Kategorie</a></Li>
+        </ul>
 
-        <section class="article">
-            <h2>Ze světa</h2>
+    </nav>
+</header>
+<main>
+    <div class="box-info">
+        <h1>Články</h1>
+    </div>
+    <div class="box-timer">
+        <p id="dnesek">2021</p>
+    </div>
+    <div class="wrapHome ">
+        <form method="post">
+            <div class="search">
+                <label for="search"></label><input type="text" id="search" class="searchItem" placeholder="Hledat..."
+                                                   autofocus required>
+                <button class="searchButton" type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+    <section class="content">
+        <div class="flex-articles">
             <article>
-                <h3>Article 1</h3>
+                <h2><a href="article.html">Exploze Černobylu</a></h2>
                 <header>
-                    <h1>Zprava dne</h1>
-                    <p>autor: John</p>
+                    <p>Vznik: 26.4.1986</p>
+                    <p>autor: Černobyl</p>
                 </header>
                 <p>
-                    Toto je zprava. Toto je zprava.Toto je zprava.Toto je zprava.Toto je zprava.Toto je zprava.
+                    Černobylská havárie je dosud nejzávažnější havárií v historii jaderné energetiky. V časných ranních
+                    hodinách v sobotu 26. dubna 1986 došlo během technické zkoušky v Černobylské jaderné elektrárně na
+                    severu Ukrajiny k abnormálnímu vzrůstu výkonu a následnému prudkému zvýšení tlaku páry v jaderném
+                    reaktoru typu RBMK-1000.
+                </p>
+                <img src="https://vedator.org/wp-content/uploads/2019/06/NOW-15-800x445.png" alt="Chernobil">
+                <aside>
+                    <img src="https://i.pinimg.com/736x/fc/c5/e9/fcc5e936fcb78e5e9571033df6f052c5.jpg"
+                         alt="Trocha černého humoru">
+                </aside>
+            </article>
+            <article>
+                <h3><a href="article.html">Splnění dalších požadavků</a></h3>
+                <header>
+                    <p>Vznik: 2.12.2021</p>
+                    <p>autor: Mr. M</p>
+                </header>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS not included</li>
+                </ul>
+            </article>
+            <article>
+                <h2><a href="article.html">Lorem ipsum</a></h2>
+                <header>
+                    <p>Vznik: 26.4.1986</p>
+                    <p>autor: Černobyl</p>
+                </header>
+                <p>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus animi autem consequatur debitis dolore exercitationem inventore itaque, iure laudantium natus, nobis quaerat quam quasi quis, saepe sit unde veniam.</span><span>Architecto at, aut dolore et iure minus molestiae nisi quam quos rerum? A aspernatur labore magnam molestias, mollitia natus qui. Ad aspernatur cum dolore ducimus minus optio quas quos sequi?</span><span>Aperiam commodi culpa cupiditate eligendi enim eos eum excepturi iusto non, perspiciatis possimus quas quos repudiandae, rerum, soluta velit vitae voluptatum. Earum magni nisi quia! Ab cum nemo officiis provident?</span><span>Blanditiis consequatur et ex excepturi, ipsam obcaecati optio quos reprehenderit tempora tenetur? Aspernatur consequuntur cumque deserunt dolorem earum et eum facere illo impedit nesciunt nihil, non quasi quod repellat vero.</span><span>Accusantium asperiores at deleniti dolorum est eveniet explicabo illo impedit ipsa natus pariatur reprehenderit, saepe tempore vel velit! Animi dolor doloremque earum eligendi explicabo iste nam praesentium quas quia, rem?</span>
                 </p>
             </article>
-            <aside>
+            <article>
+                <h2><a href="article.html">Černobyl udělal bum</a></h2>
+                <header>
+                    <p>Vznik: 26.4.1986</p>
+                    <p>autor: Černobyl</p>
+                </header>
                 <p>
-                    toto je rozkosna kocicka.
+                    Černobylská havárie je dosud nejzávažnější havárií v historii jaderné energetiky. V časných ranních
+                    hodinách v sobotu 26. dubna 1986 došlo během technické zkoušky v Černobylské jaderné elektrárně na
+                    severu Ukrajiny k abnormálnímu vzrůstu výkonu a následnému prudkému zvýšení tlaku páry v jaderném
+                    reaktoru typu RBMK-1000.
+                </p>
+            </article>
+            <article>
+                <h2><a href="article.html">Aktuální stav zápočtového projektu</a></h2>
+                <header>
+                    <p>Vznik: 19.10.2021</p>
+                    <p>autor: <a href="https://github.com/Mirak52">Mirak52</a></p>
+                </header>
+                <p>
+                    Opravdu mi chybí Bulma.. A 400 řádků css je poměrně dost..
                 </p>
                 <figure>
-                    <img src="https://d25tv1xepz39hi.cloudfront.net/2016-07-16/files/cat-sample_1313.jpg" alt="cute kitten" style="width: 50%"/>
-                    <figcaption>obr.1 kote</figcaption>
+                    <img src="https://thumb.spokesman.com/D1ims2fi_wtetprNKQ2ZPakBmMU=/2500x1405/smart/media.spokesman.com/photos/2021/05/20/60a6741a3616b.hires.jpg"
+                         alt="Elephant at sunset">
+                    <figcaption>Stav tohoto kódu</figcaption>
                 </figure>
-            </aside>
-
+            </article>
             <article>
-                <h3>Article 2</h3>
+                <h2><a href="article.html">Bacon ipsum</a></h2>
+                <header>
+                    <p>Vznik: 26.4.2012</p>
+                    <p>autor: Prase</p>
+                </header>
                 <p>
-                    Toto je druha zprava. Toto je druha zprava. Toto je druha zprava. Toto je druha zprava. Toto je druha zprava.
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad alias delectus deserunt dolorem eligendi esse eum harum, ipsum neque omnis placeat quae quas qui rem rerum saepe totam velit!</span><span>Amet, architecto asperiores beatae dolor earum facere fugit iure labore maiores modi, nisi optio perspiciatis ratione reiciendis repellat sint vero! Adipisci deserunt dolor maxime minima numquam sit vitae. Aspernatur, ipsum.</span><span>Beatae consequuntur cumque dignissimos dolore doloremque doloribus ea eos eveniet facilis fugiat in ipsum laudantium minima mollitia obcaecati pariatur, perferendis quae reiciendis repellendus repudiandae sed ullam vel voluptas voluptates voluptatibus.</span><span>Adipisci aliquam dignissimos ea eaque, eos eveniet expedita facere id iusto laborum modi necessitatibus nobis numquam officiis optio, perferendis placeat porro quaerat quasi sapiente temporibus ut vel voluptas voluptate voluptatem.</span><span>Et eveniet impedit nesciunt sapiente sunt voluptatem? A accusantium aut autem blanditiis est in ipsam maxime nam quam velit. A distinctio earum ipsam necessitatibus perferendis recusandae similique tempore temporibus voluptas!</span><span>Atque commodi cum cupiditate delectus ipsa ipsam, mollitia necessitatibus non optio quae tempora unde. At aut consectetur consequuntur, dicta enim impedit maxime modi pariatur repudiandae rerum sit tempore temporibus ut?</span><span>A alias dignissimos esse fugiat illo natus pariatur quaerat, repellendus. Culpa eaque excepturi impedit molestiae porro qui quia similique soluta. Earum eum exercitationem ipsum minus modi nesciunt odit perferendis, quae!</span><span>Deleniti deserunt ea est hic labore libero molestias optio placeat, quae quo reprehenderit voluptatem voluptates? Alias, aliquid consequatur dolores, dolorum facilis fuga omnis optio perferendis possimus reprehenderit similique, voluptatum! Iure?</span><span>Aliquam assumenda corporis dolorem inventore iure minus omnis quis vel! A aliquid beatae commodi deleniti dolorem doloremque ea earum esse eum ipsa molestias natus recusandae soluta sunt, suscipit tempore totam?</span><span>Alias blanditiis consequatur eveniet laboriosam nisi obcaecati porro quod voluptatum? Adipisci commodi cum explicabo labore molestiae odit quisquam, saepe vel? Amet commodi, dolores dolorum ducimus quam quibusdam ratione rem temporibus?</span>
                 </p>
             </article>
-
-        </section>
-        <section class="article">
-            <h2>Z domova</h2>
-            <article id="p1">
-                <h3>Zpráva 1</h3>
+            <article>
+                <h2><a href="article.html">Chees ipsum</a></h2>
+                <header>
+                    <p>Vznik: 26.4.2012</p>
+                    <p>autor: Prase</p>
+                </header>
                 <p>
-                    Toto je zprava. Toto je zprava.Toto je zprava.Toto je zprava.Toto je zprava.Toto je zprava.
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur at beatae, cupiditate debitis dolorum eum id modi, nobis officiis optio possimus quaerat quas repellat repellendus saepe similique veritatis vitae.</span>
                 </p>
-
             </article>
-            <aside>
+            <article>
+                <h2><a href="article.html">Slaninéz ipsum</a></h2>
+                <header>
+                    <p>Vznik: 26.4.2012</p>
+                    <p>autor: Prase</p>
+                </header>
                 <p>
-                    toto jsou roukosni pejsci.
-                    <!--<img src="https://i1.wp.com/readysetpuppy.com/wp-content/uploads/2019/09/Socializing-Your-German-Shepherd-Puppy-The-First-16-Weeks.jpg?w=998&ssl=1"
-                         alt="cute puppies"/>-->
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis impedit, quam. Alias atque cumque exercitationem nulla numquam quod suscipit vero voluptatum. Autem beatae fugit libero minima quibusdam ratione voluptatem voluptates.</span><span>Accusamus ad aliquam, animi commodi dicta doloremque, earum ipsum itaque perspiciatis quam quas reiciendis similique temporibus tenetur vitae. Aliquid animi, dolore iste itaque labore molestias porro praesentium quas totam voluptate?</span><span>Architecto cumque eius iure nam velit! Eos harum iure magni natus nemo neque omnis perferendis quaerat reprehenderit voluptate. Autem dolores modi odio tenetur voluptates! Ab culpa expedita maxime natus tempore?</span>
                 </p>
-            </aside>
-
-            <article id="p2">
-                <h3>Zpráva 2</h3>
-                <p>
-                    Toto je druha zprava. Toto je druha zprava. Toto je druha zprava. Toto je druha zprava. Toto je druha zprava.
-                </p>
-
             </article>
-        </section>
-    </div>
+            <article>
+                <h2><a href="article.html">Bacon ipsum</a></h2>
+                <header>
+                    <p>Vznik: 26.4.2012</p>
+                    <p>autor: Prase</p>
+                </header>
+                <p>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo magnam neque praesentium quaerat. Adipisci dolore eligendi fugit illum, itaque iusto minima porro quae quibusdam reiciendis reprehenderit rerum temporibus totam, veritatis?</span>
+                </p>
+            </article>
+            <article>
+                <h2><a href="article.html">Bacon ipsum</a></h2>
+                <header>
+                    <p>Vznik: 26.4.2012</p>
+                    <p>autor: Prase</p>
+                </header>
+                <p>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad commodi esse exercitationem itaque, neque quo? Asperiores, aut dolor dolorem ea expedita id ipsam nisi omnis perferendis porro quam quas velit.</span><span>Animi architecto, culpa cumque dicta earum explicabo facilis minus odit pariatur perferendis qui saepe sapiente similique! Ad aliquam dolorum excepturi omnis quis tenetur veniam. Et expedita incidunt placeat quia rerum!</span>
+                </p>
+            </article>
+        </div>
+    </section>
+    <section class="content">
+        <h2 class="section-name">AUTOŘI</h2>
+        <div class="flex-autors">
+            <section>
+                <h3>Pavlína Šimonová</h3>
+                <img src="https://cdn-icons-png.flaticon.com/512/146/146005.png" alt="girl">
+            </section>
+            <section>
+                <h3>Marek Bastl</h3>
+                <img src="https://image.flaticon.com/icons/png/512/146/146007.png" alt="boy">
+            </section>
+            <section>
+                <h3>Vojta Slepička</h3>
+                <img src="https://cdn-icons-png.flaticon.com/512/1801/1801656.png" alt="chicken">
+
+            </section>
+        </div>
+    </section>
 </main>
-
-    <footer>
-        <nav>
-            <ul>
-                <Li><a href="">Home</a></Li>
-                <Li><a href="">Contacts</a></Li>
-            </ul>
-        </nav>
-    </footer>
+<footer>
+    <nav class="footer">
+        <ul>
+            <Li><a href="index.html">Home</a></Li>
+            <Li><a href="kontakty.html">Contacts</a></Li>
+            <Li><a target="_blank" href="https://github.com/Mirak52/Projekt-web-design">Ukázka kdo a jak na čem pracoval. (Github)</a></Li>
+        </ul>
+    </nav>
+</footer>
 </body>
+<script>
+    function actualTime() {
+        var str = "";
+        var days = ["Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek", "Sobota", "Neděle"];
+        var now = new Date();
+        str += days[now.getDay()] + ", " + now.getDate() + " " + now.getFullYear() + " " + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+        document.getElementById("dnesek").innerHTML = str;
+    }
+
+    setInterval(actualTime, 1000);
+</script>
+<script src="https://kit.fontawesome.com/74f90f8a3d.js" crossorigin="anonymous"></script>
 </html>

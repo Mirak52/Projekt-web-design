@@ -8,65 +8,90 @@
 </head>
 <body>
 <header>
-    <div class="navbar">
-        <nav>
-            <h1 class="nadpis">Article</h1>
-            <ul>
-                <Li><a class="button" href="index.html" >Home</a></Li>
-                <Li><a class="button" href="article.html">Článek1</a></Li>
-                <Li><a class="button" href="article.html">Článek2</a></Li>
-                <Li><a class="button" href="kontakty.html">Kontakty</a></Li>
-                <Li><a class="button" href="kategorie.html">Kategorie</a></Li>
-            </ul>
-        </nav>
-        <div class="searchbar">
-            <input type="text" placeholder="search">
-            <button type="submit">hledat</button>
+    <nav>
+        <ul class="menu-container">
+            <li><a class="project-name" href="index.html">Vítejte v našem školním projektu P.M.V</a></li>
+            <Li><a class="item" href="kontakty.html">Kontakty</a></Li>
+            <Li><a class="item" href="kategorie.html">Kategorie</a></Li>
+        </ul>
+        <div class="breadcrumbs">
+            <a href="index.html" class="breadcrumbs__item">Home</a>
+            <a href="article.html" class="breadcrumbs__item is-active">Article 1</a>
         </div>
-    </div>
+        <div class="wrap">
+            <form method="post">
+                <div class="search">
+
+                    <label for="search"></label><input type="text" id="search" class="searchItem"
+                                                       placeholder="Hledat..." autofocus required>
+                    <button class="searchButton" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </nav>
 </header>
-
 <main>
-<div class="article">
 
-    <article>
-        <h2>článek</h2>
-        <input type="checkbox" class="more-state" id="clanek-1"/>
-        <p class="more-wrap">
+    <div class="article">
+        <article>
+            <h2>článek</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod aliquam commodo. Integer ut
+                enim at dui mattis ultricies. Vivamus a convallis massa. Nunc interdum, quam non vehicula cursus, leo
+                ante blandit neque, vitae dignissim mi mauris non urna.Nulla at facilisis urna. Maecenas in nibh non
+                purus pellentesque venenatis ut eget quam. Nunc sodales pulvinar ipsum, sit amet tincidunt dui fringilla
+                vel. Vivamus metus velit, sollicitudin sed vehicula id, varius non urna. Suspendisse in nunc aliquam sem
+                molestie convallis vel in lacus. Integer pharetra sodales ultrices.
 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod aliquam commodo. Integer ut enim at dui mattis ultricies. Vivamus a convallis massa. Nunc interdum, quam non vehicula cursus, leo ante blandit neque, vitae dignissim mi mauris non urna.<span class="more-target"> Nulla at facilisis urna. Maecenas in nibh non purus pellentesque venenatis ut eget quam. Nunc sodales pulvinar ipsum, sit amet tincidunt dui fringilla vel. Vivamus metus velit, sollicitudin sed vehicula id, varius non urna. Suspendisse in nunc aliquam sem molestie convallis vel in lacus. Integer pharetra sodales ultrices.
+            </p>
+            <hr>
+        </article>
+    </div>
+    <div class="komentare">
 
-            Vivamus ut urna suscipit, dapibus purus a, aliquet leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam mollis tempus lacinia. Pellentesque purus quam, accumsan ut tincidunt nec, dapibus id tortor. Nulla in venenatis turpis. Donec venenatis nulla nec felis fermentum sollicitudin. Donec augue enim, porta sed sapien sit amet, fermentum vulputate mauris. Maecenas rutrum hendrerit ultricies. Sed id imperdiet quam. Integer in turpis a tellus hendrerit vulputate ac et mi. Sed nec lectus et nunc porta ultricies. Praesent accumsan elit eget mauris pellentesque, vel efficitur sem dignissim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-
-            Cras tempus hendrerit venenatis. Aliquam sollicitudin gravida gravida. Maecenas commodo interdum ipsum, porttitor interdum justo facilisis id. Morbi et tortor ornare, egestas nisi ac, blandit nibh. Phasellus et malesuada lacus. Etiam pretium ex at libero laoreet, in tincidunt nisi feugiat. Sed vehicula, arcu eget rutrum mattis, nulla magna viverra ipsum, et lobortis ligula nisl sit amet sem. Sed sit amet nulla lobortis, scelerisque nunc luctus, viverra nisl. Pellentesque pellentesque ac massa eu molestie. Integer in arcu purus. Ut cursus elit volutpat elementum semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dapibus, turpis vel suscipit suscipit, magna enim tristique elit, id maximus purus libero eget quam. Nulla dictum molestie tellus, at luctus lectus lobortis auctor.
-
-            Maecenas et lectus lacinia, aliquet arcu in, imperdiet nibh. Etiam et ultrices turpis. Phasellus ut nulla quam. Sed erat nisl, varius id aliquet non, fermentum ac ante. Mauris vitae elit condimentum, dictum lectus ac, ultricies enim. Quisque in sapien libero. Nullam eleifend tellus augue, id condimentum eros vulputate et. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam eu ligula sagittis, laoreet ipsum pretium, tempor mauris. Maecenas suscipit auctor felis tempor ultricies. Morbi congue, risus eu vehicula sagittis, lorem felis accumsan odio, eu tincidunt leo elit luctus magna. In quis ullamcorper odio, quis eleifend nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In nisl leo, imperdiet eu malesuada sed, pretium vel velit. Donec aliquet sed tortor id feugiat. Etiam scelerisque vitae dui quis sagittis.
-        </span></p>
-        <label for="clanek-1" class="more-trigger"></label>
-        <hr>
-    </article>
-</div>
-    <div class="komentar">
         <h2>komentáře</h2>
-        <input>
-            <label>jmeno: </label>
-            <input type="text">
-            <br>
-            <label>vložte svůj komentář:</label>
+        <div class="komentar">
+            <p class="commentAutor" id="c1"><strong> Arnis Chcidomu</strong></p>
+            <div class="commentContent">Cupcake ipsum dolor sit amet soufflé jujubes gummies. Chupa chups icing cake
+                jelly
+                tootsie roll apple pie fruitcake apple pie. Gingerbread bonbon jelly tiramisu pudding cupcake tart pie
+                pastry. Halvah halvah sweet roll wafer apple pie.
+            </div>
+        </div>
+        <div class="komentar">
+            <p class="commentAutor" id="c2"><strong> Sirius Die</strong></p>
+            <div class="commentContent">Cupcake ipsum dolor sit amet apple pie apple pie gummi bears brownie. Cupcake
+                apple pie liquorice oat cake pastry sweet biscuit lollipop lollipop. Dessert chocolate cake carrot cake
+                muffin sesame snaps marshmallow oat cake. Topping fruitcake chocolate cake gummies sweet cheesecake
+                donut tiramisu topping.
+            </div>
+        </div>
+
+        <form method="post">
+            <div class="insertComment">
+                <label for="name"> </label>
+                <input type="text" id="name" placeholder="Vložte své jméno.">
                 <br>
-            <textarea></textarea>
-                <input type="submit">
+                <label for="c">Komentujte:</label>
+                <br>
+                <textarea rows="6" id="c" class="komment"></textarea>
+                <button type="submit">odeslat komentář</button>
+            </div>
         </form>
     </div>
 </main>
 
 <footer>
-    <nav>
+    <nav class="footer">
         <ul>
             <Li><a href="index.html">Home</a></Li>
-            <Li><a href="kontakty.html">Kontakty</a></Li>
+            <Li><a href="kontakty.html">Contacts</a></Li>
         </ul>
     </nav>
 </footer>
 </body>
+<script src="https://kit.fontawesome.com/74f90f8a3d.js" crossorigin="anonymous"></script>
+
 </html>

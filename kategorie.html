@@ -8,35 +8,54 @@
 </head>
 <body>
 <header>
-    <div class="navbar">
-        <nav>
-            <h1 class="nadpis">Kategorie</h1>
-            <ul>
-                <Li><a class="button" href="index.html" >Home</a></Li>
-                <Li><a class="button" href="article.html">Článek1</a></Li>
-                <Li><a class="button" href="article.html">Článek2</a></Li>
-                <Li><a class="button" href="kontakty.html">Kontakty</a></Li>
-                <Li><a class="button" href="kategorie.html">Kategorie</a></Li>
-            </ul>
-        </nav>
-        <div class="searchbar">
-            <input type="text" placeholder="search">
-            <button type="submit">hledat</button>
+    <nav class="header">
+        <ul class="menu-container">
+            <li><a class="project-name" href="index.html">Vítejte v našem školním projektu P.M.V</a></li>
+            <Li><a class="item" href="kontakty.html">Kontakty</a></Li>
+            <Li><a class="item" href="kategorie.html">Kategorie</a></Li>
+        </ul>
+        <div class="breadcrumbs">
+            <a href="index.html" class="breadcrumbs__item">Home</a>
+            <a href="article.html" class="breadcrumbs__item is-active">Kategorie</a>
         </div>
-    </div>
+        <div class="wrap">
+            <form method="post">
+                <div class="search">
+
+                    <label for="search"></label><input type="text" id="search" class="searchItem" placeholder="Hledat..." autofocus required>
+                    <button class="searchButton" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+
+                </div>
+            </form>
+        </div>
+    </nav>
 </header>
-
 <main>
+    <div class="grid-kategorie">
+        <div class="kat grid-item1"><a href="article.html">1Z domova</a></div>
+        <div class="kat grid-item2"><a href="article.html">2Ze světa</a></div>
+        <div class="kat grid-item2"><a href="article.html">3Hry</a></div>
+        <div class="kat grid-item1"><a href="article.html">4Počasí</a></div>
+        <div class="kat grid-item3"><a href="article.html">5chci domu</a></div>
+        <div class="kat grid-item1"><a href="article.html">6chce se mi brecet</a></div>
+        <div class="kat grid-item1"><a href="article.html">7strasne moc</a></div>
+        <div class="kat grid-item1"><a href="article.html">8aaaa</a></div>
 
+
+    </div>
 </main>
 
-<footer>
-    <nav>
+<footer >
+    <nav class="footer">
         <ul>
             <Li><a href="index.html">Home</a></Li>
-            <Li><a href="kontakty.html">Kontakty</a></Li>
+            <Li><a href="kontakty.html">Contacts</a></Li>
         </ul>
     </nav>
 </footer>
 </body>
+<script src="https://kit.fontawesome.com/74f90f8a3d.js" crossorigin="anonymous"></script>
+
 </html>
