@@ -3,7 +3,7 @@
     --primary-light-color: #e64f97;
     --primary-dark-color: #7b003e;
     --secondary-main-color: #222222;
-    --secondary-light-colo: #494949;
+    --secondary-light-color: #494949;
     --secondary-dark-color: #000000;
 }
 
@@ -92,6 +92,23 @@ article img {
     max-width: 100%;
     vertical-align: bottom;
 }
+.box-info {
+    width: 75%;
+    float: left;
+}
+.box-info-box h1 {
+    padding-left: 0.5em;
+}
+.box-timer {
+    width: 25%;
+    float: left;
+    padding: 2em 0 2em 0;
+    text-align: center;
+}
+.box-timer p {
+    text-shadow: 0 0 20px var(--secondary-light-color);
+}
+
 @media only screen and (min-width: 900px) {
     main {
         width: 75%;
@@ -106,6 +123,7 @@ article img {
         width: 75%;
         float: left;
     }
+
 }
 .flex-autors {
     margin-bottom: 1em;

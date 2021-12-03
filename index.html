@@ -22,6 +22,12 @@
         </nav>
     </header>
     <main>
+        <div class="box-info">
+            <h1>Články</h1>
+        </div>
+        <div class="box-timer">
+            <p id="dnesek">2021</p>
+        </div>
         <div class="box-menu">
             <form method="post">
                 <label for="search">Vyhledat: </label>
@@ -33,7 +39,6 @@
             </div>
         </div>
         <section class="content">
-            <h2 class="section-name">AUTOŘI</h2>
             <div class="flex-articles">
                 <article>
                     <h2><a href="article.html">Exploze Černobylu</a></h2>
@@ -85,7 +90,7 @@
                         <p>autor: <a href="https://github.com/Mirak52">Mirak52</a></p>
                     </header>
                     <p>
-                        Současná práce na projektu započala již 19 řijna, kdy jsem založil repozitář s tím, že značnou práci udělá náš indisponovaný kolega, ovšem ukázalo se, že den před odevzdáním chlapec na nic nesáhl, to by bylo v pořádku kdybych se ho několikrát neptal zda vše stíhá a vždy bylo řečeno že ano.
+                        Opravdu mi chybí Bulma.. A 400 řádků css je poměrně dost..
                     </p>
                     <figure>
                         <img src="https://thumb.spokesman.com/D1ims2fi_wtetprNKQ2ZPakBmMU=/2500x1405/smart/media.spokesman.com/photos/2021/05/20/60a6741a3616b.hires.jpg"
@@ -173,4 +178,15 @@
         </nav>
     </footer>
 </body>
+<script>
+    function actualTime()
+    {
+        var str = "";
+        var days = ["Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek", "Sobota", "Neděle"];
+        var now = new Date();
+        str += days[now.getDay()] + ", " + now.getDate() + " " + now.getFullYear() + " " + now.getHours() +":" + now.getMinutes() + ":" + now.getSeconds();
+        document.getElementById("dnesek").innerHTML = str;
+    }
+    setInterval(actualTime, 1000);
+</script>
 </html>
