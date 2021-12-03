@@ -430,7 +430,9 @@ article img {
     bottom: 0;
     margin: 0;
 }
-
+.footer ul {
+    float: left;
+}
 .footer a {
     color: white;
 
