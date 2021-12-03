@@ -7,56 +7,97 @@
     <title>Article 1</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="menu-container">
-                <li><a class="project-name" href="index.html">Vítejte v našem školním projektu P.M.V</a></li>
-                <Li><a class="item" href="index.html" >Home</a></Li>
-                <Li><a class="item" href="kontakty.html">Kontakty</a></Li>
-                <Li><a class="item" href="kategorie.html">Kategorie</a></Li>
-            </ul>
-        </nav>
+<header>
+    <nav>
+        <ul class="menu-container">
+            <li><a class="project-name" href="index.html">Vítejte v našem školním projektu P.M.V</a></li>
+            <Li><a class="item" href="index.html">Home</a></Li>
+            <Li><a class="item" href="kontakty.html">Kontakty</a></Li>
+            <Li><a class="item" href="kategorie.html">Kategorie</a></Li>
+        </ul>
 
-        <nav class="breadcrumbs">
+
+        <div class="breadcrumbs">
             <a href="index.html" class="breadcrumbs__item">Home</a>
             <a href="article.html" class="breadcrumbs__item is-active">Article 1</a>
-        </nav>
+        </div>
+        <div class="wrap">
+            <form method="post">
+                <div class="search">
 
-    </header>
+                    <label for="search"></label><input type="text" id="search" class="searchItem"
+                                                       placeholder="Hledat..." autofocus required>
+                    <button class="searchButton" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+
+                </div>
+            </form>
+        </div>
+
+    </nav>
+
+</header>
 <main>
 
-<div class="article">
-    <article>
-        <h2>článek</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod aliquam commodo. Integer ut enim at dui mattis ultricies. Vivamus a convallis massa. Nunc interdum, quam non vehicula cursus, leo ante blandit neque, vitae dignissim mi mauris non urna.Nulla at facilisis urna. Maecenas in nibh non purus pellentesque venenatis ut eget quam. Nunc sodales pulvinar ipsum, sit amet tincidunt dui fringilla vel. Vivamus metus velit, sollicitudin sed vehicula id, varius non urna. Suspendisse in nunc aliquam sem molestie convallis vel in lacus. Integer pharetra sodales ultrices.
+    <div class="article">
+        <article>
+            <h2>článek</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod aliquam commodo. Integer ut
+                enim at dui mattis ultricies. Vivamus a convallis massa. Nunc interdum, quam non vehicula cursus, leo
+                ante blandit neque, vitae dignissim mi mauris non urna.Nulla at facilisis urna. Maecenas in nibh non
+                purus pellentesque venenatis ut eget quam. Nunc sodales pulvinar ipsum, sit amet tincidunt dui fringilla
+                vel. Vivamus metus velit, sollicitudin sed vehicula id, varius non urna. Suspendisse in nunc aliquam sem
+                molestie convallis vel in lacus. Integer pharetra sodales ultrices.
 
-        </p>
-        <hr>
-    </article>
-</div>
-    <div class="komentar">
+            </p>
+            <hr>
+        </article>
+    </div>
+    <div class="komentare">
 
         <h2>komentáře</h2>
+        <div class="komentar">
+            <p class="commentAutor" id="c1"><strong> Arnis Chcidomu</strong></p>
+            <div class="commentContent">Cupcake ipsum dolor sit amet soufflé jujubes gummies. Chupa chups icing cake
+                jelly
+                tootsie roll apple pie fruitcake apple pie. Gingerbread bonbon jelly tiramisu pudding cupcake tart pie
+                pastry. Halvah halvah sweet roll wafer apple pie.
+            </div>
+        </div>
+        <div class="komentar">
+            <p class="commentAutor" id="c2"><strong> Sirius Die</strong></p>
+            <div class="commentContent">Cupcake ipsum dolor sit amet apple pie apple pie gummi bears brownie. Cupcake
+                apple pie liquorice oat cake pastry sweet biscuit lollipop lollipop. Dessert chocolate cake carrot cake
+                muffin sesame snaps marshmallow oat cake. Topping fruitcake chocolate cake gummies sweet cheesecake
+                donut tiramisu topping.
+            </div>
+        </div>
+
         <form method="post">
-            <label for="name">jmeno: </label>
-            <input type="text" id="name">
-            <br>
-            <label for="komment">vložte svůj komentář:</label>
+            <div class="insertComment">
+                <label for="name"> </label>
+                <input type="text" id="name" placeholder="Vložte své jméno.">
                 <br>
-            <textarea id="komment"></textarea>
-                <input type="submit" value="odeslat komentář">
+                <label for="c">Komentujte:</label>
+                <br>
+                <textarea rows="6" id="c" class="komment" ></textarea>
+                <button type="submit" >odeslat komentář</button>
+            </div>
         </form>
     </div>
 </main>
 
-    <footer >
-        <nav class="footer">
-            <ul>
-                <Li><a href="index.html">Home</a></Li>
-                <Li><a href="kontakty.html">Contacts</a></Li>
-            </ul>
-        </nav>
-    </footer>
+<footer>
+    <nav class="footer">
+        <ul>
+            <Li><a href="index.html">Home</a></Li>
+            <Li><a href="kontakty.html">Contacts</a></Li>
+        </ul>
+    </nav>
+</footer>
 </body>
+<script src="https://kit.fontawesome.com/74f90f8a3d.js" crossorigin="anonymous"></script>
+
 </html>

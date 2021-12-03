@@ -11,26 +11,44 @@
     <nav>
         <ul class="menu-container">
             <li><a class="project-name" href="index.html">Vítejte v našem školním projektu P.M.V</a></li>
-            <Li><a class="item" href="index.html" >Home</a></Li>
+            <Li><a class="item" href="index.html">Home</a></Li>
             <Li><a class="item" href="kontakty.html">Kontakty</a></Li>
             <Li><a class="item" href="kategorie.html">Kategorie</a></Li>
         </ul>
+
+        <div class="breadcrumbs">
+            <a href="index.html" class="breadcrumbs__item">Home</a>
+            <a href="article.html" class="breadcrumbs__item is-active">Kontakty</a>
+        </div>
+        <div class="wrap">
+            <form method="post">
+                <div class="search">
+
+                    <label for="search"></label><input type="text" id="search" class="searchItem"
+                                                       placeholder="Hledat..." autofocus required>
+                    <button class="searchButton" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+
+                </div>
+            </form>
+        </div>
     </nav>
 </header>
 <main>
     <div class="grid-menu">
         <div class="grid-item">
 
-        <h2>Autor1</h2>
-        <p>tel: 456312799</p>
-        <p>adresa: U pocitace 4</p>
+            <h2>Autor1</h2>
+            <p>tel: 456312799</p>
+            <p>adresa: U pocitace 4</p>
 
-    </div>
+        </div>
         <div class="grid-item">
 
             <h2>Autor2</h2>
             <p>tel: 555123182</p>
-            <p>adresa: U pocitace 42/p>
+            <p>adresa: U pocitace 42</p>
 
         </div>
         <div class="grid-item">
@@ -44,12 +62,15 @@
     </div>
 
 </main>
-<footer >
+<footer>
     <nav class="footer">
         <ul>
             <Li><a href="index.html">Home</a></Li>
             <Li><a href="kontakty.html">Contacts</a></Li>
         </ul>
     </nav>
-</footer></body>
+</footer>
+</body>
+<script src="https://kit.fontawesome.com/74f90f8a3d.js" crossorigin="anonymous"></script>
+
 </html>
